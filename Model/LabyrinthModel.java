@@ -12,6 +12,8 @@ package Model;
 public interface LabyrinthModel {
     
     //public static final Constanta;
+    // Pentru Factory Methods
+    void buildLabyrinth();
     
     public void getRowCount();
     

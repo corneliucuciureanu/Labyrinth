@@ -9,7 +9,7 @@ package Model;
  *
  * @author cc@armcloud.eu
  */
-public class RandomBuilder implements LabyrinthBuilder{
+public class RandomBuilder implements LabyrinthModel{
 
     RandomBuilder() {
         throw new UnsupportedOperationException("RandomBuilder Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -18,6 +18,36 @@ public class RandomBuilder implements LabyrinthBuilder{
 
     @Override
     public void buildLabyrinth() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void getRowCount() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void getColumnCount() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void isFreeAt() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void isWallAt() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void getStartCell() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void getFinishCell() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

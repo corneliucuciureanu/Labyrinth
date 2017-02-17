@@ -6,7 +6,8 @@
 package Controller;
 
 /**
- *
+ * Here Observers goes ! 
+ * 
  * @author cc@armcloud.eu
  */
 public interface LabyrinthSolver {

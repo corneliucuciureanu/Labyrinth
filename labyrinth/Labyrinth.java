@@ -19,7 +19,12 @@ public class Labyrinth {
         System.out.println("Labyrinth Problem");
         System.out.println(" --- ");
         
-        LabyrinthModelImpl labyrinth = new LabyrinthModelImpl("FILE");
+       // LabyrinthModelImpl labyrinth = new LabyrinthModelImpl("FILE");
+        
+          LabyrinthFactory builder = new LabyrinthFactory();
+          LabyrinthModel labyrinth;
+          labyrinth = builder.getLabyrinth("FILE");
+          labyrinth.buildLabyrinth();
         
     }
     

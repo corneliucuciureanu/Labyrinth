@@ -9,8 +9,8 @@ package Model;
  *
  * @author cc@armcloud.eu
  */
-public class BuilderFactory {
-    public LabyrinthBuilder getLabyrinth(String builderType) {
+public class LabyrinthFactory {
+    public LabyrinthModel getLabyrinth(String builderType) {
         //System.out.println("Builder Factory");
         if (builderType == null) {
             return null;
