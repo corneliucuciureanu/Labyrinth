@@ -5,6 +5,9 @@
  */
 package View;
 
+import Model.LabyrinthFactory;
+import Model.LabyrinthModel;
+
 /**
  *interface LabyrinthView responsible with describing the text representation of a labyrinth
  * 
@@ -19,14 +22,16 @@ package View;
 public interface LabyrinthView {
     
     /**
-     *Get the Labyrinth
+     *Get the Labyrinth as text representation to scree
+     * 
      */
     public void getLabyrinth();
     
     /**
      *Set the Labyrinth
+     * @param labyrintView to transmit the data from model through Controller 
      */
-    public void setLabyrinth();
+    public void setLabyrinth(LabyrinthModel labyrintView);
     
     
     /**
@@ -34,6 +39,6 @@ public interface LabyrinthView {
      * 
      * @return String of Labyrinth
      */
-    @Override
-     public String toString();
+    //@Override
+    public String toString();
 }

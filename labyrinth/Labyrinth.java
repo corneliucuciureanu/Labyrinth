@@ -5,6 +5,8 @@
  */
 package labyrinth;
 import Model.*;
+import View.LabyrinthView;
+import View.LabyrinthViewImplConsole;
 
 /**
  *
@@ -19,13 +21,32 @@ public class Labyrinth {
         System.out.println("Labyrinth Problem");
         System.out.println(" --- ");
         
-       // LabyrinthModelImpl labyrinth = new LabyrinthModelImpl("FILE");
+            
+       /**
+        * create the Model
+        */
+        LabyrinthModel labyrinthModel = LabyrinthFactory.getLabyrinth("FILE");  
+        //labyrinth.buildLabyrinth();
+          
+        /**
+         * create the View 
+         * 
+         */
+         LabyrinthViewImplConsole labyrinthTextConsole;
+        labyrinthTextConsole = new LabyrinthViewImplConsole(labyrinthModel);
+         //System.out.println(labyrinthTextConsole.toString());
+         labyrinthTextConsole.getLabyrinth();
         
-          LabyrinthFactory builder = new LabyrinthFactory();
-          LabyrinthModel labyrinth;
-          labyrinth = builder.getLabyrinth("FILE");
-          labyrinth.buildLabyrinth();
-        
+        /**
+         * create the solver with Model and view as data 
+         */
+
+
+
+
+//          System.out.println("row "+labyrinth.getRowCount()+"   column "+labyrinth.getColumnCount()+
+//                  "\n start"+labyrinth.getStartCell()+" finish "+labyrinth.getFinishCell());
+//          System.out.println("cell "+labyrinth.getCellAt(4, 2));
     }
     
 }

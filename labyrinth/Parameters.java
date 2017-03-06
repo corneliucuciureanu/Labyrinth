@@ -14,5 +14,5 @@ public interface Parameters {
     /**
      *File from where we read the Labyrinth data as input
      */
-    public static final String INPUT_FILE = "labyrinthInput1.txt";
+    public final String INPUT_FILE = "labyrinthInput1.txt";
 }

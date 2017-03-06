@@ -5,11 +5,13 @@
  */
 package Observer;
 
+import Model.Cell;
+
 /**
  * interface LabyrinthObserver that describes an observer of the labyrinth exploration
  * @author cc@armcloud.eu
  */
 public interface LabyrinthObserver {
-    public void  processCell();
+    public void  processCell(Cell c);
     public void processSolution();
 }

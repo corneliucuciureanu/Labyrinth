@@ -10,14 +10,14 @@ package Model;
  * @author cc@armcloud.eu
  */
 public class LabyrinthFactory {
-    public LabyrinthModel getLabyrinth(String builderType) {
+    public static LabyrinthModel getLabyrinth(String builderType) {
         //System.out.println("Builder Factory");
         if (builderType == null) {
             return null;
         }
         
         if (builderType.equalsIgnoreCase("FILE")){
-            return new ReadFileBuilder();
+            return new ReadFileBuilder(); 
         } else if(builderType.equalsIgnoreCase("RANDOM")) {
             return new RandomBuilder();
         } else if(builderType.equalsIgnoreCase("CONSOLE")) {
